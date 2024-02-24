@@ -6,46 +6,92 @@
     <title>Mote HTML tags</title>
 </head>
 <body>
-    <h1 id="top_h1">More Tag Fun!</h1>
+    <header>
+        <h1 id="top_h1">More Tag Fun!</h1>
+    </header>
+    
 <!-- <hr> -->
-Link to bottom of the page: <a href="#last_footer">Footer</a>
-<h2>RTU logo</h2>
-    <img src="rtu_logo_lv.jpg" alt="RTU logo" width="200">
-    <h2 id="food">Food I like</h2>
-    <h3>Favorites</h3>
-    <ul>
-        <li>Avocado</li>
-        <li>Dark chocolate</li>
-        <li>Nuts</li>
-        <li>Cheese
-            <ul>
-                <li>Brie</li>
-                <li>Camambert</li>
-            </ul>
-        </li>
-    </ul>
-    <br>
-    <h2>My favorite activities</h2>
-    <ol start="101">
-        <li>Snowboarding</li>
-        <li>Reading</li>
-        <li>Drinking tea</li>
-        <li>Rollerskating</li>
-    </ol>
+<main>
+    Link to bottom of the page: <a href="#last_footer">Footer</a>
+    <h2>RTU logo</h2>
+        <img src="rtu_logo_lv.jpg" alt="RTU logo" width="200">
+        <h2>Map of RTU</h2>
+        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=24.066560268402103%2C56.94697612424893%2C24.0931248664856%2C56.95510905487059&amp;layer=mapnik" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/#map=16/56.9510/24.0798">Skatīt lielāku karti</a></small>
+        
+        <article>
+            <h2>Hotlinking</h2>
+            <p>     You can also hotlink an image meaning taken address from somewhere else.
+                Generally you should hotlink only to resource that you own or have persmission to use.
+            </p>
+        </article>
+
+        <img src="https://www.rtu.lv/writable/public_files/b_RTU_autonomous_ships.jpg" alt="RTU autonomous ships" height="100">
+
+        <article>
+            <h2>How to use iframe</h2>
+            <p>
+                You can iframe to add pretty much any external content to your page.
+                Just be careful with size and the source of the content.
+                Youtube videos, Google Maps, and many other services provid you with an iframe code to embed their content.
+            </p>
+        </article>
+        
+        <h2 id="food">Food I like</h2>
+        <h3>Favorites</h3>
+        <ul>
+            <li>Avocado</li>
+            <li>Dark chocolate</li>
+            <li>Nuts</li>
+            <li>Cheese
+                <ul>
+                    <li>Brie</li>
+                    <li>Camambert</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <h2>My favorite activities</h2>
+        <ol start="101">
+            <li>Snowboarding</li>
+            <li>Reading</li>
+            <li>Drinking tea</li>
+            <li>Rollerskating</li>
+        </ol>
+        <hr>
+        <!-- Let's create some simple links with anchors -->
+        <a href="https://www.rtu.lv">RTU</a>
+        <!-- We could also open in a new tab -->
+        <a href="https://www.lnb.lv" target="_blank">National Library of Latvia in a new tab</a>
     <hr>
-    <!-- Let's create some simple links with anchors -->
-    <a href="https://www.rtu.lv">RTU</a>
-    <!-- We could also open in a new tab -->
-    <a href="https://www.lnb.lv" target="_blank">National Library of Latvia in a new tab</a>
-<hr>
-<!-- Let's create a simple form -->
-    <form action="https://www.google.com/search" method="get">
-        <label for="search">Search:</label>
-        <input type="text" id="search" name="q">
-        <input type="submit" value="Search">
-    </form>
-    <hr>
+    <!-- Let's create a simple form -->
+        <form action="https://www.google.com/search" method="get">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="q">
+            <input type="submit" value="Search">
+        </form>
+        <hr>
+        <h3>Let's create simple table</h3>
+        <table>
+            <tr>
+                <th>First name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>22</td>
+            </tr>
+        </table>
+
     Link to the top of the page: <a href="#top_h1">Top Header</a>
+</main>
+
     <footer id="last_footer">Made with confusion (c)2024</footer>
 
 </body>
