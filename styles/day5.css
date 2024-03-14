@@ -1,0 +1,67 @@
+* {
+    /* * is most general selector it will be overwrittem
+    by most other rules*/
+    background-color: beige;
+}
+
+    /*path: styles/day5.css*/
+    /* let's add some rules for boxes class
+    we want some margin and some border*/
+    .boxes {
+        position: relative;
+        margin: 10px;
+        border: 2px solid black;
+        padding: 3px;
+        background-color: lightcyan;
+        border-radius: 5px;
+        width: 200px;
+        height: 100px;
+
+    }
+
+    .b-content {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+
+        text-align: center;
+        vertical-align: middle;
+        margin: auto;
+        width: 50%;
+        height: 20%;
+        /* so id I push 25% from parent to the left the content takes 50% of parrent, then right side will be 25%*/
+        /*for vertical centering consider hight of the content, this case it was ~18px*/
+    }
+
+    .box-1 {
+        position: relative;
+        top: 10px;
+        left: 15px;
+        background-color: lightgreen;
+
+    }
+
+    .box-2{
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        background-color: lightseagreen;
+        z-index: 5000; /* default 2-index is)*/
+    }
+
+    .box-3 {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        background-color: lightcoral;
+    }
+
+    .my_emphasis {
+        display: inline-block;
+        width: 180px;
+        height: 50px;
+        font-weight: bold;
+        color: red;
+        font-size: 24px;
+
+    }
