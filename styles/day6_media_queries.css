@@ -1,0 +1,87 @@
+body{
+    background-color: aliceblue;
+}
+p{
+    font-size: 20px;
+}
+.boxes {
+    border: 2px solid black;
+    margin: 5px;
+    /*corner radius*/
+    border-radius: 6px;
+}
+
+.box-1{
+    width: 200px;
+    height: 150px;
+}
+
+.my-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-10 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.b-content{
+    width: 60px;
+    height: 60px;
+    background-color: lightcoral;
+    border-radius: 10%;
+    margin: 2px;
+    border: 1px dotted black;
+}
+
+.box-20 {
+    display: flex;
+    justify-content: center;
+}
+
+.box-30{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* justify-content:flex-end; */
+
+/*Media devices (landscape tables, up to and including 768px)  */
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: lightyellow;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+/*Media query for screen width less than 600px
+It will overwrite the default rule*/
+@media screen and (max-width: 600px){
+    body{
+        background-color: lightgreen;
+    }
+    p{
+        font-size: 14px;
+    }
+    /*You can add any CSS rules here*/
+}
+
+/*Above was top-down approach*/
+/*Below is bottom - up approach
+we would start with settings for small device 
+and then add settungs for larger devices using min-width media queries */
+
+/*Media query for screen width less than 600px
+It will overwrite the default rule*/
+@media screen and (max-width:600px) {
+    body{
+        background-color: lightgreen;
+    }
+}
