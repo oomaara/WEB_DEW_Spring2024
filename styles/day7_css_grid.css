@@ -1,0 +1,65 @@
+.container{
+    display: grid;
+    /*fr means fractional of the available space*/
+    /*1fr and 2fr means 1/3 and 2/3 of the available space after accounting for other elements*/
+    grid-template-columns: 20% 40% 35%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+    /* justify-content: center;
+    align-items: center;  */
+    background-color: aliceblue;
+    /* width: 550px; */
+    grid-template-areas: 
+    "my-header my-header my-header"
+    "my-nav my-article my-sidebar"
+    "my-nav my-main my-sidebar"
+    "my-footer my-footer my-footer";
+}
+
+.box{
+    background-color: lightcoral;
+    border: 2px dashed black;
+    border-radius: 5%;
+}
+
+/*let's give grid area to each box clas from box 1 to box 6*/
+/*my - is optional, use any name that is semantically reasonable*/
+
+.box-1{
+    grid-area: my-header;
+    /*Alternative would be to set grid area: 1/1/2/4;*/
+    background-color: lightblue;
+}
+.box-2{
+    grid-area: my-main;
+    background-color: gainsboro;
+}
+.box-3{
+    grid-area: my-footer;
+    background-color: lightgreen;
+}
+.box-4{
+    grid-area: my-sidebar;
+    background-color: lightpink;
+}
+.box-5{
+    grid-area: my-article;
+    background-color: lightyellow;
+}
+.box-6{
+    grid-area: my-nav;
+    background-color: linen;
+}
+
+/*let's make a media query that will create 3 columns when the screen us 768px or more*/
+@media only screen and (min-width: 768px){
+    .container{
+        grid-template-columns: 20% 25% 35% 30%;
+
+        grid-template-areas: 
+        "my-header my-header my-header my-header"
+        "my-nav my-article my-article my-sidebar"
+        "my-nav my-main my-main my-sidebar"
+        "my-footer my-footer my-footer my-footer";
+    }
+}
