@@ -1,0 +1,62 @@
+/*let's make root font size 10px*/
+html{
+    font-size: 10px;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+/*we also want rest of the text be 1.4rem*/
+
+p, a, li, span, div{
+    font-size: 1.4rem;
+}
+
+/*let's scale class logo image when we hover over them*/
+.logo {
+    transition: transform 0.7s ease-in-out;
+    width: 10rem; /*note that adjusting width and height does not change original size of image*/
+} 
+/* when someone hovers over a logo image, it will scale up by 20%*/
+.logo:hover{
+    transform: scale(1.2);
+}
+
+/*let's add a shadow to the gradient box*/
+.gradient-box-shadow {
+    width: 10rem; /*rem stands for root em, it is relative to the font-size of the root element*/
+    height: 10rem;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    box-shadow: 7px 10px 17px 2px rgba(167, 48, 48, 0.53);
+
+    /*let's add a transition to the box-shadow*/
+    /*turns out transition does not work on background so we would need to use some hacks
+    https://css-tricks.com/transitioning-gradients/ */
+    /*transition:background: 3.5s ease-in-out;*/
+}
+
+/*let's reverse gradient on hover*/
+.gradient-box-shadow:hover {
+    /* background: linear-gradient(45deg, #af4261, #f3ec78); */
+    /*let's make a linear grafient of 3 colors
+    https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
+    background: linear-gradient(90deg, #f3ec78 #af4261, #9778f3);
+}
+
+/* Now let's animate all elements of class animate-box*/
+.animate-box{
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    box-shadow: 7px 10px 17px 2px rgba(167, 48, 48, 0.53);
+    transition: all 0.7s ease-in-out;
+}
