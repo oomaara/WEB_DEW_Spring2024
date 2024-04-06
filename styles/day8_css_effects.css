@@ -17,7 +17,7 @@ h3{
 
 /*we also want rest of the text be 1.4rem*/
 
-p, a, li, span, div{
+p, a, li, span, div, article{
     font-size: 1.4rem;
 }
 
@@ -49,14 +49,29 @@ p, a, li, span, div{
     /* background: linear-gradient(45deg, #af4261, #f3ec78); */
     /*let's make a linear grafient of 3 colors
     https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
-    background: linear-gradient(90deg, #f3ec78 #af4261, #9778f3);
+    background: linear-gradient(90deg, #f3ec78, #af4261, #9778f3);
 }
 
 /* Now let's animate all elements of class animate-box*/
 .animate-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*make it round*/
+    border-radius: 50%;
     width: 10rem;
     height: 10rem;
     background: linear-gradient(45deg, #f3ec78, #af4261);
     box-shadow: 7px 10px 17px 2px rgba(167, 48, 48, 0.53);
     transition: all 0.7s ease-in-out;
 }
+
+/*we want it to roll to the right side of the screen when hovered*/
+.animate-box:hover{
+    transform: translateX(20rem) rotate(360deg);
+    /*we also want rotation*/
+    /* background: linear-gradient(90deg, #f3ec78, #af4261, #9778f3); */
+}
+
+/*for advanced animation control you could add keyframes */
+/*on more keyframes: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
