@@ -44,7 +44,95 @@
         <li>"22" == 22 is<span id="comparison17"></span><strong> AVOID == </strong></li>
         <li>"22" === 22 is<span id="comparison18"></span><strong> USE === </strong></li>
     </ul>
-    
+
+    <h2>Boolean values</h2>
+    <p>Results of our comparison operators are so called boolean values, named after George Boole a 19th century logician, matematician.</p>
+    <p>More about G.Boole: <a href="https://en.wikipedia.org/wiki/George_Boole">wikipedia</a></a></p>
+    <img src="img/330px-George_Boole_color.jpg" alt="George Boole" width="200">
+    <h3>Boolean truth tables</h3>
+    <p>Boolean values can be represented in so called truth tables. Here are some examples: </p>
+    <table class="my-table">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A AND B</th>
+            <th>A OR B</th>
+            <th>NOT A</th>
+        </tr>
+        <tr>
+            <td>true</td>
+            <td>true</td>
+            <td>true</td>
+            <td>true</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>true</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>false</td>
+            <td>true</td>
+            <td>false</td>
+            <td>true</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+            <td>false</td>
+            <td>true</td>
+        </tr>
+    </table>
+
+    <p>Assume we have two variables a and b, they will hold truth values</p>
+    <p>Let's say a = true, b = false</p>
+    <p>Then a AND b will be false</p>
+    <p>a OR b will be true</p>
+    <p>NOT a will be false</p>
+    <h3>JavaScript Boolean operators</h3>
+    <p>Here are some examples of boolean operators in JavaScript:</p>
+    <ul>
+        <li>true && true is <span id="boolean1"</span></li>
+        <li>true && false is <span id="boolean2"</span></li>
+        <li>false && true is <span id="boolean3"</span></li>
+        <li>false && false is <span id="boolean4"</span></li>
+        <li>true || true is <span id="boolean5"</span></li>
+        <li>true || false is <span id="boolean6"</span></li>
+        <li>false || true is <span id="boolean7"</span></li>
+        <li>false || false is <span id="boolean8"</span></li>
+        <li>!true is <span id="boolean9"</span></li>
+        <li>!false is <span id="boolean10"</span></li>
+    </ul>
+
+    <h2>Branching</h2>
+    <p>Branching is a way to exclude different code based on some condition. In JS we have if, else if and else statements. Here is an example: </p>
+    <pre>
+        <code>
+            if (condition){
+                //code to exclude if condition is true
+            } else{
+                // code to exclude if condition is false
+            }
+        </code>
+    </pre>
+    <p>Here is a more complex example:</p>
+    <pre>
+        <code>
+            if (condition){
+                //code to exclude if condition1 is true
+            } else if (condition){
+                //code to exclude if condition2 is true 
+            } else {
+                // code to exclude if condition1 and condition2 are false
+            }
+        </code>
+    </pre>
+
     <div class="output" id="output">Some placeholder content</div>
 </body>
 </html>

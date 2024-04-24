@@ -7,3 +7,24 @@
     padding: 0.5 rem; /*rem is a vertical size of root font usually 1rem is 16px*/
     width: 50%;
 }
+
+.my-table{
+    /*I want boarders of 2ps on all sides
+    and 1 ps inside*/
+    border: 2px solid #2d2626;
+}
+
+.my-table th{
+    border: 2px solid rgb(145, 40, 40);
+    padding: 0.5rem;
+
+}
+.my-table td{
+    /*I want borders of 2ps on all sides*/
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.span{
+    background-color: antiquewhite;
+}
