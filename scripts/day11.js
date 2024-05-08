@@ -1,4 +1,4 @@
-console.log("Let's do some looping!")
+console.log("Let's do some looping!");
 
 //while loop
 let i = 0; //start value
@@ -7,7 +7,7 @@ while (i < 5){ //condition
     i++; // increment i by one// same as i+=1 or i=i+1
 }
 //after iteration
-concole.lof("After while loop i is", i);
+concole.log("After while loop i is", i);
 
 //we can loop backwards, just need to adjust the condition
 let floor = 9; //our initial floor is 9
