@@ -59,6 +59,60 @@
     <p>Output:</p>
     <p id="forLoopOutput"></p>
     <h3>For In Loop</h3>
+    <p>For in loops are used to loop through the properties of an object.</p>
+    <p>We will discuss this in another lecture</p>
+
+    <h2>Switches</h2>
+    <p>Example:</p>
+    <pre>
+        <code>
+            let day = new Date().getDay();
+            switch (day){
+                case 0: //in JS Sunday is 0
+                    console.log("Sunday");
+                    break;
+                case 1:
+                    console.log("Monday");
+                    break;
+                case 2:
+                    console.log("Tuesday");
+                    break; 
+                case 3:
+                    console.log("Wednesday");
+                    break;
+                case 4:
+                    console.log("Thursday");
+                    break;
+                case 5:
+                    console.log("Friday");
+                    break;
+                case 6:
+                    console.log("Saturday");
+                    break;
+                default:
+                    console.log("Unknown day");
+            }
+        </code>
+    </pre>
+    <p>Output:</p>
+    <p id="switchOutput"></p>
+    <p>Switches are useful as a tool to replace multiple if else statements</p>
+    <p>In case of numeric values that start with 0 we could have used array and gotten its elements by index
+    But in case of string values, we can't use array, so we use switches</p>
+    <p>Arrays will be discussed in another lecture</p>
+
+    <h2>Learning materials on Loops</h2>
+    <ul>
+        <li><a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank">W3Schools - Javascript For Loop</a></li>
+        <li><a href="https://www.w3schools.com/js/js_loop_while.asp" target="_blank">W3Schools - Javascript While Loop</a></li>
+        <li><a href="https://www.w3schools.com/js/js_loop_do_while.asp" target="_blank">W3Schools - Javascript Do While Loop</a></li>
+        <li><a href="https://www.w3schools.com/js/js_loop_forin.asp" target="_blank">W3Schools - Javascript For In Loop</a></li>
+    </ul>
+    <h2>Learning materials on Switches</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch">MDN on switch case</a></li>
+        <li><a href="https://www.w3schools.com/js/js_switch.asp" target="_blank">W3Schools - Javascript Switch</a></li>
+    </ul>
 
 </body>
 </html>
