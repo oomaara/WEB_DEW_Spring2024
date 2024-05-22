@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - Arrow Functions and Input Events</title>
+   <link rel="stylesheet" href="styles/day13.css">
+    <script src="scripts/day13.js" defer></script>
+</head>
+<body>
+    <h1>Arrow Functions and DOM Input Events</h1>
+    <h2>Arrow Functions</h2>
+    <p>Arrow functions are a new way to write functions in Javascript. They are shorter and easier to read.</p>
+    <p>They syntax for arrow functions is as follows:</p>
+    <pre>
+        <code>
+            const myFunction = (param1, param2) => {
+                return param1 + param2;
+            }
+        </code>
+    </pre>
+    <p>Arrow functions can be written in a shorter way if they have only one line of code:</p>
+    <pre>
+        <code>
+            const myFunction = (param1, param2) => param1 + param2;
+        </code>
+    </pre>
+    <hr>
+    <h3>Read more on arrow functions</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">MDN Arrow Functions</a></li>
+        <li><a href="https://www.w3schools.com/js/js_arrow_function.asp">W3Schools Arrow Functions</a></li>
+    </ul>
+    <hr>
+    <h2>DOM Input Events</h2>
+    <p>DOM Input Events are actions that can be detected by the browser. They can be used to trigger functions.</p>
+    <input type="text" id="input-change">
+    <input type="text" id="input-change-2">
+    <div class="fun-output" id="input-output-id"></div>
+    <hr>
+    <div class="number-calc">
+        <input type="number" id="number-1" name="first-number" min="10" max="100" placeholder="Number here" />
+        <input type="number" id="number-2" name="first-number" min="20" max="30" value="25" />
+        <input type="number" id="number-output" name="first-number" readonly />
+    </div>
+    <hr>
+    <h2>Generate New elements interactively</h2>
+    <input type="text" id="input-element">
+    <button id="btn-add-element">Add Element</button>
+    <hr>
+    <div class="element-container"></div>
+    <div class="element-container"></div>
+    <div class="element-container"></div>
+    <div class="element-container"></div>
+<h3>add element references</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN Create Element</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/appendChild">MDN Append Child</a></li>
+</ul>
+</body>
+</html>

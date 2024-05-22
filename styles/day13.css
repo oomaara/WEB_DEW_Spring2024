@@ -1,0 +1,21 @@
+.element-container {
+    /* small round border and min height */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* padding: 10px; */
+    margin: 5px;
+    min-height: 1rem;
+}
+
+.new-p-element {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.new-p-element-odd {
+    background-color: aquamarine
+}
+
+.new-p-element-even {
+    background-color: rgb(255, 227, 127)
+}
