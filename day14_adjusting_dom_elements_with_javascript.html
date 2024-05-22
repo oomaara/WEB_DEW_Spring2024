@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 14 - Adjusting DOM with Javascript</title>
+    <link rel="stylesheet" href="styles/day14.css">
+    <script src="scripts/day14.js" defer></script>
+</head>
+<body>
+    <h1>Topic 14 - Adjusting DOM with Javascript</h1>
+    <main>
+        <h2>Adding DOM elements with Javascript</h2>
+        <p>It is possible to add new elements to the DOM with Javascript. This can be done with the following methods:</p>
+        <ul>
+            <li>const newElement = document.createElement(tagType)</li>
+            <li>add properties to new element</li>
+            <li>targetElement.appendChild(newElement) where targetElement is any element on page including document itself</li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+            <code>
+                const newElement = document.createElement('div');
+                newElement.textContent = 'This is a new element';
+                document.body.appendChild(newElement);
+            </code>
+        </pre>
+        <h3>More resources</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN Create Element</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/appendChild">MDN Append Child</a></li>
+        </ul>
+    <hr>
+    <h2>Removing DOM elements with Javascript</h2>
+    <p>It is possible to remove elements from the DOM with Javascript. This can be done with the following methods:</p>
+    <ul>
+        <li>targetElement.removeChild(elementToRemove)</li>
+    </ul>
+    <h3>Example</h3>
+    <pre>
+        <code>
+            const elementToRemove = document.querySelector('.element-to-remove');
+            document.body.removeChild(elementToRemove);
+        </code>
+    </pre>
+    <h3>More resources</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild">MDN Remove Child</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove">MDN Remove</a></li>
+    </ul>
+<h3>Creating Elements with different classes and ids</h3>
+<button id="add-element-button">Add Element</button>
+<button id="add-multiple-elements-button">Add Multiple Elements</button>
+<input type="number" id="add-count" value="10" min="1" max="50">
+<button id="remove-element-button">Remove Element</button>
+<button id="remove-all-elements-button">Remove All Elements</button>
+
+<h3>Change the color of the even elements</h3>
+<label for="even-color-picker">Choose a color for the even elements:</label>
+<input type="color" id="even-color-picker" value="#ff0000">
+
+<div class="element-container" id="element-container-1">
+
+</div>
+        </main>
+</body>
+</html>
